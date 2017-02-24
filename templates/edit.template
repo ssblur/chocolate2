@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Editing Page "${title}"</title>
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="description" content="${description}">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script async src="/scripts/main.js" ></script>
+		<script async src="js/edit.js" ></script>
+	</head>
+	<body>
+		<div class="head_elem">
+			<p class="head_text">Editing Page "${title}"</p>
+		</div>
+		<div class="dropdown" >
+			<a href="https://ssblur.com/"><div class="item">Home</div></a>
+			<a href="https://modding.ssblur.com"><div class="item">Modding</div></a>
+			<a href="https://support.ssblur.com"><div class="item">Support</div></a>
+			<a href="https://ssblur.com/contactme.jwp"><div class="item">Contact Me</div></a>
+			<a href="#"><div class="item"></div></a>
+			<a href="#"><div class="item">Wiki Functions</div></a>
+			<a href="?page=${title}&mode=edit"><div class="item">Edit</div></a>
+		</div>
+		<img src="/images/dropdown.png" id="drop_icon" onmouseover="dropdown()" onmouseout="dropdown()"/>
+		<div class="button_case">
+			<form id="save" action="index.py?page=${title}&mode=save" method="post">
+				<input type="submit" value="Save" id="save_button" />
+			</form> 
+			<input type="button" onclick="bold()" id="bold_button" value="b" />
+			<input type="button" onclick="italics()" id="ital_button" value="i" />
+			<input type="button" onclick="head()" id="h1_button" value="Header" />
+			<input type="button" onclick="subhead()" id="h2_button" value="Subheader" />
+			<input type="button" onclick="bullet()" id="bull_button" value="&#8226" />
+		</div>
+		<textarea id="mta" class="main_edit" name="data" form="save">${body}</textarea>
+		<link rel="stylesheet" type="text/css" href="css/wiki.css"/>
+		<link rel="stylesheet" type="text/css" href="css/edit.css"/>
+	</body> 
+</html>	

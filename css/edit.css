@@ -1,0 +1,38 @@
+textarea {
+	resize:none;
+	position:absolute;
+	left:15px;
+	top:115px;
+	bottom:25px;
+	width:auto;
+	padding: 3px;
+	display:block;
+	width: calc( 100% - 30px );
+	margin: 0;
+	border-radius: 10px;
+}
+
+.button_case {
+	position:absolute;
+	top: 88px;
+	left: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.button_case input {
+	border: 1px black solid;
+	border-radius: 5px;
+}
+
+#bold_button {
+	font-weight: bolder;
+}
+
+#ital_button {
+	font-style: italic;
+}
+
+form {
+	display:inline;
+}

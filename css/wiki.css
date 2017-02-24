@@ -1,0 +1,168 @@
+body {
+	background-color:#d0d0d0;
+	z-index:1;
+	font-family:Verdana, Geneva, sans-serif;
+}
+center {
+	color:white;
+	background-color:#d0d0d0;
+	z-index:1;
+	font-family:Verdana, Geneva, sans-serif;
+}
+table {
+	border-radius:5px;
+}
+center table tbody tr td center{
+	background-color:#ffffff;
+}
+.head_elem {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:80px;
+	color:#fff;
+}
+	.head_text {
+		font-size:70px;
+		position:fixed;
+		top:-75px;
+		left:80px;
+		font-family:Verdana, Geneva, sans-serif;
+	}
+	.logo {
+		width:70px;
+		height:70px;
+		position:fixed;
+		top:5px;
+		left:5px;
+	}
+	.dropdown {
+		display: none;
+	}
+		.dropdown_shown, .dropdown:hover {
+			z-index:10;
+			position:fixed;
+			right:0;
+			top:0;
+			height:100%;
+			width:25%;
+			background-color:#d0d0d0;
+			border: 1px solid black;
+			display: block;
+			animation:dropdown;
+			animation-duration:.2s;
+		}
+		#drop_icon {
+			display:block;
+			position:fixed;
+			right:5px;
+			top:5px;
+			width:70px;
+			height:70px;
+			z-index:9;
+		}
+		#drop_icon:hover > .dropdown {
+			right:0;
+		}
+		.dropdown .item {
+			width:100%;
+			border: 1px solid black;
+			border-width: 0 0 1px 0;
+			height:40px;
+			color:white;
+			text-decoration:none;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 40px;
+		}
+		.dropdown .item:hover{
+			background-color: rgba(255,255,255,.2);
+			text-decoration:none;
+		}
+		a {
+			text-decoration:none;
+		}
+
+.main_elem {
+	position:fixed;
+	top:80px;
+	left:5px;
+	right:5px;
+	background-color:#f0f0f0;
+	height: calc(100% - 85px);
+	border-radius: 10px;
+	padding-left:5px;
+	overflow: auto;
+}
+.main_text {
+	white-space:pre-wrap;
+}
+@keyframes dropdown {
+	from {
+		right:-25%;
+	}
+	to {
+		right:0;
+	}
+}
+.item_elem {
+	background-color:rgba(0,0,0,.2);
+	width:240px;
+	height:300px;
+	float:left;
+	margin:3px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 10px;
+	padding: 3px;
+}
+.item_head {
+	border-bottom: 1px solid #000;
+	height:20px;
+	width:100%;
+	font-size:20px;
+}
+.item_head_text {
+	width:200px:
+	position:relative:
+	top:0;
+	left:0;
+	display:inline;
+}
+.item_imag {
+	width:20px;
+	height:20px;
+	position:relative;
+	right:0;
+	top:0;
+	display:inline;
+}
+.item_catg {
+	padding-top:5px;
+	font-weight:700;
+}
+
+input[name="q"]{
+	width:100%;
+	height:100%;
+}
+form{
+	width:100%;
+	height:100%;
+}
+add{
+	background-color:rgba(0,255,0,100);
+	border-bottom: 1px dotted black;
+	width:100%;
+}
+rem{
+	background-color:rgba(255,0,0,100);
+	border-bottom: 1px dotted black;
+	width:100%;
+}
+blockquote{
+	background-color:rgba(255,255,255,255);
+	border:1px solid black;
+	border-width: 1px 1px 1px 1px;
+	font-family:"Lucida Console", Monaco, monospace;
+}
