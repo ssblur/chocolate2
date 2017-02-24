@@ -38,9 +38,9 @@ Prerequisites:
 1. Configure Apache to run Python as CGI.
 	* Access your Apache config ( httpd.conf or apache2.conf, usually ), or site-specific config for the site you wish to use ( usually in /sites-available/\[sitename\].conf )
 	* Within your Apache config, search for the directory in which you will be installing Chocolate. It may look like this:
-		> <Directory /var/www/>
-		>	> ...
-		> </Directory>
+		> \<Directory /var/www/\>
+			> ...
+		> \</Directory\>
 	* Add a new line to this document. This line will allow CGI execution within the directory. The line should read:
 		> Options +ExecCGI
 	* Now that you have allowed script execution within the directory, you need to set .py files to be run as scripts. You need to find a line that reads something like the following:
