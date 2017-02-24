@@ -14,7 +14,7 @@ Required:
 
 from modules import *
 from modules import modes, init, data_provider
-import sqlite3, cgi, codecs
+import cgi, codecs
 
 def chocolate():
 	"""

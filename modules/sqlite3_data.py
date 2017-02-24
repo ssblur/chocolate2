@@ -62,6 +62,7 @@ class sqlite3_data():
 			for i in keys:
 				return_data[i] = self.data_types[type][i]()
 			return return_data
+		fetch_data = fetch_data[1:]
 		for i in range(len(keys)):
 			return_data[keys[i]] = fetch_data[i]
 		return return_data

@@ -48,9 +48,10 @@ def save( title, form ):
 	"""
 	if "data" in form:
 		data = form["data"].value.replace("<","&lt;").replace(">","&gt;")
-		provider.set( "pages", pagename, {"content" : text} )
+		provider.set( "pages", title, {"content" : data} )
 		return parse.parse(title, markdown.markdown(data, output_format="html5"), "templates/wiki.template") 
 	else:
+		text = provider.get( "pages", title )["content"]
 		return parse.parse(title, markdown.markdown(text, output_format="html5"), "templates/wiki.template") 
 
 modes["save"] = save # Registers save as the callback function for "save" mode
