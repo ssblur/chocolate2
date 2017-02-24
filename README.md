@@ -31,9 +31,11 @@ Setup for this wiki software is simple.
 
 This is a simple tutorial to install Python with Apache. This tutorial will likely not work with other web servers.
 
-Prerequisites:
+#### Prerequisites:
 * Python 3.3+
 * Apache Web Server
+
+#### Instructions
 
 * Access your Apache config ( httpd.conf or apache2.conf, usually ), or site-specific config for the site you wish to use ( usually in /sites-available/\[sitename\].conf )
 * Within your Apache config, search for the directory in which you will be installing Chocolate. It may look like this:
