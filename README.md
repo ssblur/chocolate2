@@ -4,6 +4,8 @@
 ## Index
 1. [Requirements](#requirements)
 1. [Installation](#installation)
+	1. [Optional Instructions](#optional)
+	2. [Using Python with Apache](#python-and-apache)
 
 ## Requirements
 
