@@ -21,7 +21,7 @@ Setup for this wiki software is simple.
 1. If using the default 'parse' module, install Markdown for python.
 	* If not using the default 'parse' module, this step is unnecessary.
 1. Install Python, and set it up for your web server. [Instructions for Apache](#python-and-apache)
-1. Add index.py as a valid index file 
+1. Enjoy!
 
 ### Optional
 
@@ -40,13 +40,13 @@ This is a simple tutorial to install Python with Apache. This tutorial will like
 * Access your Apache config ( httpd.conf or apache2.conf, usually ), or site-specific config for the site you wish to use ( usually in /sites-available/\[sitename\].conf )
 * Within your Apache config, search for the directory in which you will be installing Chocolate. It may look like this:
 
-		```
+```
 		<Directory /var/www/>
 			
 			...
 			
 		</Directory>
-		```
+```
 		
 * Add a new line to this document. This line will allow CGI execution within the directory. The line should read:
 
