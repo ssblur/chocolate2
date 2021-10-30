@@ -50,22 +50,30 @@ This is a simple tutorial to install Python with Apache. This tutorial will like
 		
 * Add a new line to this document. This line will allow CGI execution within the directory. The line should read:
 
-		`Options +ExecCGI`
+```
+		Options +ExecCGI
+```
 		
 * Now that you have allowed script execution within the directory, you need to set .py files to be run as scripts. You need to find a line that reads something like the following:
 
-		`AddHandler cgi-script .cgi .php`
+```
+		AddHandler cgi-script .cgi .php
+```
 		
 * Add the text " .py" to the end of the line, as such:
-
-		`AddHandler cgi-script .cgi .php .py`
+```
+		AddHandler cgi-script .cgi .php .py
+```
 		
 * Now all there is left to do is add 'index.py' as a valid index file. This is simple enough to do, first, find a line which reads something like the following:
-		
-		`DirectoryIndex index.cgi index.html index.php`
+```
+		DirectoryIndex index.cgi index.html index.php
+```
 		
 * Now add " index.py" to the end, as such:
-		
-		`DirectoryIndex index.cgi index.html index.php index.py`
+
+```
+		DirectoryIndex index.cgi index.html index.php index.py
+```
 		
 * That's all! Save the configuration file, then reload or restart your web server (on Linux "service apache2 reload").
